@@ -1,0 +1,93 @@
+{
+	"name": "mk-vscode-tool",
+	"displayName": "mk-vscode-tool",
+	"description": "mk大前端vscode工具扩展",
+	"version": "0.1.1",
+	"publisher": "mockuai",
+	"engines": {
+		"vscode": "^1.46.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"icon": "images/icon.jpg",
+	"activationEvents": [
+		"*"
+	],
+	"main": "./src/extension.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "魔筷大前端插件",
+			"properties": {
+				"vscodePluginDemo.showTip": {
+					"type": "boolean",
+					"default": true,
+					"description": "启动时显示自定义欢迎页"
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "extension.demo.showWelcome",
+				"title": "显示自定义欢迎页"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "extension.demo.showWelcome",
+				"key": "ctrl+f9",
+				"mac": "cmd+f9",
+				"when": "editorTextFocus"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "extension.demo.showWelcome",
+					"group": "navigation"
+				}
+			],
+			"explorer/context": [
+				{
+					"command": "extension.demo.showWelcome",
+					"group": "navigation"
+				}
+			]
+		},
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/pc/javaScript.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/pc/vue-snippets.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/pc/html-snippets.json"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/pc/html-snippets.json"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.46.0",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.2",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.3.0"
+	}
+}

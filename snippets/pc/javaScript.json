@@ -1,0 +1,198 @@
+{
+    "get": {
+        "prefix": "mk-get",
+        "body": [
+            "let data = {};",
+            "lib.api.get({",
+            "    api: '$1',",
+            "    data: data,",
+            "    success:(res) => {",
+            "    },",
+            "    error: (err) => {",
+            "    },",
+            "    complete: () => {",
+            "    }",
+            "})"
+        ],
+        "description": "魔筷GET请求"
+    },
+    "post": {
+        "prefix": "mk-post",
+        "body": [
+            "let data = {};",
+            "lib.api.post({",
+            "    api: '$1',",
+            "    data: data,",
+            "    success:(res) => {",
+            "    },",
+            "    error: (err) => {",
+            "    },",
+            "    complete: () => {",
+            "    }",
+            "})"
+        ],
+        "description": "魔筷POST请求"
+    },
+    "router-push": {
+        "prefix": "mk-push",
+        "body": [
+            "this.\\$router.push({ path: `$1` });"
+        ],
+        "description": "魔筷路由push"
+    },
+    "mk-message": {
+        "prefix": "mk-message",
+        "body": [
+            "this.\\$message('这是一条消息提示');"
+        ],
+        "description": "魔筷消息提示"
+    },
+    "message-error": {
+        "prefix": "mk-message-error",
+        "body": [
+            "this.\\$message.error('这是一条错误消息提示');"
+        ],
+        "description": "魔筷错误消息提示"
+    },
+    "message-warning": {
+        "prefix": "mk-message-warning",
+        "body": [
+            "this.\\$message.warning('这是一条警告消息提示');"
+        ],
+        "description": "魔筷错误消息提示"
+    },
+    "message-success": {
+        "prefix": "mk-message-success",
+        "body": [
+            "this.\\$message.success('这是一条成功消息提示');"
+        ],
+        "description": "魔筷成功消息提示"
+    },
+    "console": {
+        "prefix": "log",
+        "body": [
+            "console.log($1)"
+        ],
+        "description": "魔筷调试提示"
+    },
+    "messageBox-alert": {
+        "prefix": "mk-messageBox-alert",
+        "body": [
+            "this.\\$alert('这是一段内容', '标题名称', {",
+            "    confirmButtonText: '确定',",
+            "    callback: action => {",
+            "        this.\\$message({",
+            "        type: 'info',",
+            "        message: `action: ${ action }`",
+            "        });",
+            "    }",
+            "});"
+        ],
+        "description": "魔筷消息提示当用户进行操作时会被触发，该对话框中断用户操作，直到用户确认知晓后才可关闭"
+    },
+    "messageBox-confirm": {
+        "prefix": "mk-messageBox-confirm",
+        "body": [
+            "this.\\$confirm('此操作将永久删除该文件, 是否继续?', '提示', {",
+            "    confirmButtonText: '确定',",
+            "    cancelButtonText: '取消',",
+            "    type: 'warning'",
+            "    }).then(() => {",
+            "        this.\\$message({",
+            "            type: 'success',",
+            "            message: '删除成功!'",
+            "        });",
+            "    }).catch(() => {",
+            "    this.\\$message({",
+            "        type: 'info',",
+            "        message: '已取消删除'",
+            "    }); ",
+            "});"
+        ],
+        "description": "魔筷消息提示提示用户确认其已经触发的动作，并询问是否进行此操作时会用到此对话框"
+    },
+    "message": {
+        "prefix": "msg",
+        "body": [
+            "this.\\$message({",
+            "\tmessage: '${1:text}',",
+            "\ttype: '${2:info}'",
+            "});"
+        ],
+        "description": "魔筷提示message"
+    },
+    "msgbox-alert": {
+        "prefix": "alert",
+        "body": [
+            "this.\\$alert('${1:content}', '${2:title}', {",
+            "\tconfirmButtonText: '${3:confirm}',",
+            "\tcallback: ${4:action} => {",
+            "\t\t",
+            "\t}",
+            "});"
+        ],
+        "description": "魔筷提示alert"
+    },
+    "msgbox-confirm": {
+        "prefix": "confirm",
+        "body": [
+            "this.\\$confirm('${1:content}', '${2:title}', {",
+            "\tconfirmButtonText: '${3:confirm}',",
+            "\tcancelButtonText: '${4:cancel}',",
+            "\ttype: '${5:warning}'",
+            "}).then(() => {",
+            "\t",
+            "}).catch(() => {});"
+        ],
+        "description": "魔筷提示confirm"
+    },
+    "msgbox-prompt": {
+        "prefix": "prompt",
+        "body": [
+            "this.\\$prompt('${1:content}', '${2:title}', {",
+            "\tconfirmButtonText: '${3:confirm}',",
+            "\tcancelButtonText: '${4:cancel}',",
+            "\tinputPattern: /${5:regExp}/,",
+            "\tinputErrorMessage: '${6:errormsg}'",
+            "}).then(({ value }) => {",
+            "\t",
+            "}).catch(() => {});"
+        ],
+        "description": "魔筷提示prompt"
+    },
+    "msgbox": {
+        "prefix": "msgb",
+        "body": [
+            "this.\\$msgbox({",
+            "\ttitle: '${1:title}',",
+            "\tmessage: '${2:string|VNode}',",
+            "\tshowCancelButton: ${3:true},",
+            "\tconfirmButtonText: '${4:confirm}',",
+            "\tcancelButtonText: '${5:cancel}',",
+            "\tbeforeClose: (action, instance, done) => {}",
+            "}).then(action => {",
+            "\t",
+            "});"
+        ],
+        "description": "魔筷提示msgbox"
+    },
+    "notification": {
+        "prefix": "notify",
+        "body": [
+            "this.\\$notify({",
+            "\ttitle: '${1:title}',",
+            "\tmessage: '${2:string|VNode}'",
+            "});"
+        ],
+        "description": "魔筷提示notify"
+    },
+    "arrow function": {
+        "prefix": "mk-fn",
+        "body": [
+            "${1:fn}() {",
+            "\t${2}",
+            "},"
+        ],
+        "description": "魔筷提示创建函数"
+    }
+}

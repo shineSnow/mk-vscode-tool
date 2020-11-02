@@ -1,0 +1,21 @@
+{
+    "get": {
+        "prefix": "mk-get",
+        "body": [
+            "lib.api.get({"
+            "    api: '$1',"
+            "    data: '$2',"
+            "    success:(res) => {"
+
+            "    },"
+            "    error: (err) => {"
+
+            "    },"
+            "    complete: () => {"
+            
+            "    }"
+            "})"
+        ],
+        "description": "魔筷GET请求"
+    }
+}

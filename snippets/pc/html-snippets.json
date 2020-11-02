@@ -1,0 +1,553 @@
+{
+    "Basic: Layout el-row": {
+        "prefix": "row",
+        "body": [
+            "<el-row>",
+            "\t<el-col :span=\"${1:24}\">${3}</el-col>",
+            "</el-row>",
+            "${5}"
+        ],
+        "description": "魔筷代码提示Element UI <el-row> with <el-col>"
+    },
+    "Basic: el-button": {
+        "prefix": "button",
+        "body": [
+            "<el-button type=\"${1|primary,text,info,success,warning,danger|}\" @click=\"$2\"></el-button>",
+            "${3}"
+        ],
+        "description": "魔筷代码提示Element UI <el-button>"
+    },
+    "Form: Radio": {
+        "prefix": "radio",
+        "body": [
+            "<el-radio v-model=\"${1}\" label=\"${2}\">$3</el-radio>",
+            "${4}"
+        ],
+        "description": "魔筷代码提示单选框"
+    },
+    "Form: Radio Group": {
+        "prefix": "radio-group",
+        "body": [
+            "<el-radio-group v-model=\"$1\">",
+            "\t<el-radio v-for=\"${2:item} in ${3:items}\" :key=\"${2:item}.${4:key}\" :label=\"${2:item}.${5:label}\">",
+            "\t\t{{${2:item}.${6:title}}}",
+            "\t</el-radio>",
+            "</el-radio-group>",
+            "${7}"
+        ],
+        "description": "魔筷代码提示单选框组"
+    },
+    "Form: Checkbox": {
+        "prefix": "checkbox",
+        "body": [
+            "<el-checkbox v-model=\"${1}\" label=\"${2}\">$3</el-checkbox>",
+            "${4}"
+        ],
+        "description": "魔筷代码提示多选框"
+    },
+    "Form: Checkbox Group": {
+        "prefix": "checkbox-group",
+        "body": [
+            "<el-checkbox-group v-model=\"$1\">",
+            "\t<el-checkbox v-for=\"${2:item} in ${3:items}\" :key=\"${2:item}.${4:key}\" :label=\"${2:item}.${5:label}\"></el-checkbox>",
+            "</el-checkbox-group>",
+            "${6}"
+        ],
+        "description": "魔筷代码提示多选框组"
+    },
+    "Form: Input": {
+        "prefix": "input",
+        "body": [
+            "<el-input v-model=\"$1\" placeholder=\"$2\"></el-input>",
+            "${3}"
+        ],
+        "description": "魔筷代码提示输入框"
+    },
+    "Form: Textarea": {
+        "prefix": "textarea",
+        "body": [
+            "<el-input type=\"textarea\" :autosize=\"{ minRows: 4, maxRows: 6}\" v-model=\"$2\" placeholder=\"$3\"></el-input>",
+            "${4}"
+        ],
+        "description": "魔筷代码提示文本域>"
+    },
+    "Form: Select": {
+        "prefix": "select",
+        "body": [
+            "<el-select v-model=\"$1\" placeholder=\"$2\">",
+            "\t<el-option v-for=\"${3:item} in ${4:options}\"",
+            "\t\t:key=\"${3:item}.${5:value}\"",
+            "\t\t:label=\"${3:item}.${6:label}\"",
+            "\t\t:value=\"${3:item}.${5:value}\">",
+            "\t</el-option>",
+            "</el-select>",
+            "${7}"
+        ],
+        "description": "魔筷代码提示选择器"
+    },
+    "Form: Select Option": {
+        "prefix": "option",
+        "body": [
+            "<el-option :label=\"$1\" :value=\"$2\"></el-option>",
+            "${3}"
+        ],
+        "description": "魔筷代码提示选择器option"
+    },
+    "Form: Cascader": {
+        "prefix": "cascader",
+        "body": [
+            "<el-cascader :options=\"${1:options}\" v-model=\"${2:selectedOptions}\" @change=\"${3:handleChange}\">",
+            "</el-cascader>",
+            "${4}"
+        ],
+        "description": "魔筷代码提示级联选择器"
+    },
+    "Form: Switch": {
+        "prefix": "switch",
+        "body": [
+            "<el-switch",
+            "\tv-model=\"${1:switch}\"",
+            "\tactive-color=\"${2:#13ce66}\"",
+            "\tinactive-color=\"${3:#ff4949}\"",
+            "\tactive-text=\"${4:按月付费}\"",
+            "\tinactive-text=\"${5:按年付费}\">",
+            "</el-switch>",
+            "${6}"
+        ],
+        "description": "魔筷代码提示switch开关"
+    },
+    "Form: TimePicker": {
+        "prefix": "timepicker",
+        "body": [
+            "<el-time-picker v-model=\"${1:timepicker}\"",
+            "\tplaceholder=\"${4:任意时间点}\">",
+            "</el-time-picker>"
+        ],
+        "description": "魔筷代码提示时间选择器"
+    },
+    "Form: TimePickerRnage": {
+        "prefix": "timepickerrange",
+        "body": [
+            "<el-time-picker",
+            "\tis-range",
+            "\tv-model=\"${1:timepickerrange}\"",
+            "\trange-separator=\"至\"",
+            "\tstart-placeholder=\"开始时间\"",
+            "\tend-placeholder=\"结束时间\"",
+            "\tplaceholder=\"选择时间范围\">",
+            "</el-time-picker>"
+        ],
+        "description": "魔筷代码提示时间范围选择器"
+    },
+    "Form: DatePicker": {
+        "prefix": "datepicker",
+        "body": [
+            "<el-date-picker v-model=\"$1\" type=\"date\" placeholder=\"${2:选择日期时间}\">",
+            "</el-date-picker>"
+        ],
+        "description": "魔筷代码提示日期选择器"
+    },
+    "Form: DatePickerRange": {
+        "prefix": "datepickerrange",
+        "body": [
+            "<el-date-picker",
+            "\tv-model=\"detepickerrange\"",
+            "\ttype=\"daterange\"",
+            "\trange-separator=\"至\"",
+            "\tstart-placeholder=\"开始日期\"",
+            "\tend-placeholder=\"结束日期\">",
+            "</el-date-picker>"
+        ],
+        "description": "魔筷代码提示日期范围选择器"
+    },
+    "Form: DateTimerPicker": {
+        "prefix": "datetimepicker",
+        "body": [
+            "<el-date-picker",
+            "\tv-model=\"datetimepicker\"",
+            "\ttype=\"datetime\"",
+            "\tplaceholder=\"选择日期时间\">",
+            "</el-date-picker>"
+        ],
+        "description": "魔筷代码提示日期时间选择器"
+    },
+    "Form: DateTimePickerRange": {
+        "prefix": "datetimepickerrange",
+        "body": [
+            "<el-date-picker",
+            "\tv-model=\"${1:datetimepickerrange}\"",
+            "\ttype=\"datetimerange\"",
+            "\trange-separator=\"至\"",
+            "\tstart-placeholder=\"开始日期\"",
+            "\tend-placeholder=\"结束日期\">",
+            "</el-date-picker>"
+        ],
+        "description": "魔筷代码提示日期时间范围选择器"
+    },
+    "Form: Upload": {
+        "prefix": "upload",
+        "body": [
+            "<el-upload",
+            "\taction=\"$1\"",
+            "\t:on-remove=\"$2\"",
+            "\tmultiple",
+            "\t:limit=\"${3:5}\"",
+            "\t:on-exceed=\"$4\"",
+            "\t:file-list=\"$5\">",
+            "\t<el-button size=\"small\" type=\"primary\">${6:点击上传}</el-button>",
+            "\t<div slot=\"tip\" class=\"el-upload__tip\">${7:只能上传jpg/png文件，且不超过500kb}</div>",
+            "</el-upload>",
+            "${8}"
+        ],
+        "description": "魔筷代码提示上传"
+    },
+    "Form: Rate": {
+        "prefix": "rate",
+        "body": [
+            "<el-rate v-model=\"$1\"></el-rate>",
+            "${2}"
+        ],
+        "description": "魔筷代码提示rate"
+    },
+    "Form: ColorPicker": {
+        "prefix": "colorpicker",
+        "body": [
+            "<el-color-picker v-model=\"$1\"></el-color-picker>",
+            "${2}"
+        ],
+        "description": "魔筷代码提示颜色选择器"
+    },
+    "Form: Transfer": {
+        "prefix": "transfer",
+        "body": [
+            "<el-transfer v-model=\"$1\" :data=\"$2\"></el-transfer>",
+            "${3}"
+        ],
+        "description": "魔筷代码提示穿梭框"
+    },
+    "Form: Form": {
+        "prefix": "form",
+        "body": [
+            "<el-form :model=\"${1:form}\" ref=\"${1:form}\" label-width=\"80px\">",
+            "\t<el-form-item label=\"$2\">",
+            "\t\t<el-input v-model=\"${1:form}.${3}\"></el-input>",
+            "\t</el-form-item>",
+            "\t<el-form-item>",
+            "\t\t<el-button type=\"primary\" @click=\"onSubmit\">${4:立即创建}</el-button>",
+            "\t\t<el-button>${5:取消}</el-button>",
+            "\t</el-form-item>",
+            "</el-form>",
+            "${6}"
+        ],
+        "description": "魔筷代码提示form"
+    },
+    "Form: Form Item": {
+        "prefix": "formitem",
+        "body": [
+            "<el-form-item label=\"$1\">",
+            "\t$2",
+            "</el-form-item>",
+            "${3}"
+        ],
+        "description": "魔筷代码提示form-item"
+    },
+    "Data: Table": {
+        "prefix": "table",
+        "body": [
+            "<el-table :data=\"$1\" border stripe>",
+            "\t<el-table-column v-for=\"${2:col} in ${3:columns}\"",
+            "\t\t:prop=\"${2:col}.${4:id}\"",
+            "\t\t:key=\"${2:col}.${4:id}\"",
+            "\t\t:label=\"${2:col}.${5:label}\"",
+            "\t\t:width=\"${2:col}.${6:width}\">",
+            "\t</el-table-column>",
+            "</el-table>",
+            "${7}"
+        ],
+        "description": "魔筷代码提示表格"
+    },
+    "Data: Table Column": {
+        "prefix": "tablecolumn",
+        "body": [
+            "<el-table-column",
+            "\t:prop=\"${1:col}.${2:id}\"",
+            "\t:label=\"${1:col}.${3:label}\"",
+            "\t:width=\"${1:col}.${4:width}\">",
+            "</el-table-column>",
+            "${5}"
+        ],
+        "description": "魔筷代码提示表格列元素"
+    },
+    "Data: Pagination": {
+        "prefix": "pagination",
+        "body": [
+            "<el-pagination",
+            "\t@size-change=\"${1:sizeChange}\"",
+            "\t@current-change=\"${2:currentChange}\"",
+            "\t:current-page=\"${3:currentPage}\"",
+            "\t:page-sizes=\"${4:[20, 40, 80, 100]}\"",
+            "\t:page-size=\"${5:pageSize}\"",
+            "\tlayout=\"total, sizes, prev, pager, next, jumper\"",
+            "\t:total=\"${6:totalNum}\" background>",
+            "</el-pagination>",
+            "${7}"
+        ],
+        "description": "魔筷代码提示分页"
+    },
+    "Data: Badge": {
+        "prefix": "badge",
+        "body": [
+            "<el-badge :value=\"$1\">",
+            "\t$2",
+            "</el-badge>",
+            "${3}"
+        ],
+        "description": "魔筷代码提示badge"
+    },
+    "Notice: Alert": {
+        "prefix": "alert",
+        "body": [
+            "<el-alert :title=\"$1\" type=\"${2|info,success,warning,error|}\" show-icon></el-alert>",
+            "${3}"
+        ],
+        "description": "魔筷代码提示alert"
+    },
+    "Navigation: NavMenu Menu": {
+        "prefix": "menu",
+        "body": [
+            "<el-menu mode=\"${1:horizontal}\" :default-active=\"$2\" @select=\"$3\">",
+            "\t<el-submenu v-for=\"(${4:submenus}, ${5:index}) in ${6:menus}\"",
+            "\t\t:index=\"${5:index} + 1\"",
+            "\t\t:key=\"${4:submenus}.${5:key}\">",
+            "\t\t<template slot=\"title\">${4:submenus}.${6:title}</template>",
+            "\t\t<el-menu-item v-for=\"(${7:item}, ${8:subIndex}) in ${4:submenus}\"",
+            "\t\t\t:index=\"(${5:index} + 1) + '-' + (${8:subIndex} + 1)\">",
+            "\t\t\t\t{{${7:item}.${9:title}}}",
+            "\t\t</el-menu-item>",
+            "\t</el-submenu>",
+            "</el-menu>",
+            "${10}"
+        ],
+        "description": "魔筷代码提示menu"
+    },
+    "Navigation: NavMenu subMenu": {
+        "prefix": "submenu",
+        "body": [
+            "<el-submenu :index=\"$1\">",
+            "\t<template slot=\"title\">$2</template>",
+            "\t<el-menu-item v-for=\"(${3:item}, ${4:subIndex}) in $5\"",
+            "\t\t:index=\"${4:subIndex} + 1\"",
+            "\t\t:key=\"${5:item}.${6:key}\">>",
+            "\t\t\t{{${3:item}.$7}}",
+            "\t</el-menu-item>",
+            "</el-submenu>",
+            "${8}"
+        ],
+        "description": "魔筷代码提示submenu"
+    },
+    "Navigation: NavMenu Menu Item": {
+        "prefix": "menuitem",
+        "body": [
+            "<el-menu-item :index=\"$1\">$2</el-menu-item>",
+            "${3}"
+        ],
+        "description": "魔筷代码提示menuitem"
+    },
+    "Navigation: Tabs": {
+        "prefix": "tabs",
+        "body": [
+            "<el-tabs v-model=\"$1\"",
+            "\ttype=\"${2:card}\">",
+            "\t<el-tab-pane v-for=\"${3:item} in items\"",
+            "\t\t:key=\"${3:item}.${4:key}\"",
+            "\t\t:label = \"${3:item}.${5:label}\"",
+            "\t\t:name=\"${3:item}.${6:id}\">",
+            "\t\t$7",
+            "\t</el-tab-pane>",
+            "</el-tabs>",
+            "${8}"
+        ],
+        "description": "魔筷代码提示tabs"
+    },
+    "Navigation: Tabs tab pane": {
+        "prefix": "tabpane",
+        "body": [
+            "<el-tab-pane :label=\"$1\" :name=\"$2\">",
+            "\t$3",
+            "</el-tab-pane>",
+            "${4}"
+        ],
+        "description": "魔筷代码提示tab-pane"
+    },
+    "Navigation: Tooltip": {
+        "prefix": "tooltip",
+        "body": [
+            "<el-tooltip class=\"item\" effect=\"dark\" content=\"${1:Top Center 提示文字}\" placement=\"${2|top,top-start,top-end,bottom,bottom-start,bottom-end,left,left-start,left-end,right,right-start,right-end|}\">",
+            "<el-button>上边</el-button>",
+            "</el-tooltip>"
+        ],
+        "description": "魔筷代码提示tab-pane"
+    },
+    "Others: Popover": {
+        "prefix": "popover",
+        "body": [
+            "<el-popover",
+            "\t:ref=\"$1\"",
+            "\tplacement=\"$2\"",
+            "\t:title=\"$3\"",
+            "\twidth=\"$4\"",
+            "\ttrigger=\"${5:click}\"",
+            "\tcontent=\"$6\">",
+            "\t${7: <!-- <el-button slot=\"reference\">content</el-button> -->}",
+            "</el-popover>",
+            "${8}"
+        ],
+        "description": "魔筷代码提示弹出框"
+    },
+    "Others: Card": {
+        "prefix": "card",
+        "body": [
+            "<el-card :body-style=\"${1:{ padding: '0px' }}\">",
+            "\t<div slot=\"header\">",
+            "\t\t<span>${2:<!-- card title -->}</span>",
+            "\t</div>",
+            "\t${3:<!-- card body -->}",
+            "</el-card>",
+            "${4}"
+        ],
+        "description": "魔筷代码提示卡片"
+    },
+    "Others: Carousel": {
+        "prefix": "carousel",
+        "body": [
+            "<el-carousel trigger=\"${1:hover}\" height=\"${2:150px}\">",
+            "\t<el-carousel-item v-for=\"${3:item} in ${4:items}\" :key=\"${3:item}.${5:key}\">",
+            "\t\t${6:<!-- content -->}",
+            "\t</el-carousel-item>",
+            "</el-carousel>",
+            "${7}"
+        ],
+        "description": "魔筷代码提示走马灯"
+    },
+    "Others: Carousel Item": {
+        "prefix": "carouselitem",
+        "body": [
+            "<el-carousel-item>",
+            "\t${1:<!-- content -->}",
+            "</el-carousel-item>",
+            "${2}"
+        ],
+        "description": "魔筷代码提示走马灯子组件"
+    },
+    "Others: Collapse": {
+        "prefix": "collapse",
+        "body": [
+            "<el-collapse v-model=\"${1:activeNames}\" :accordion=\"${2:false}\" @change=\"$3\">",
+            "\t<el-collapse-item v-for=\"${4:item} in ${5:items}\"",
+            "\t\t:key=\"${4:item}.${6:id}\"",
+            "\t\t:title=\"${4:item}.${7:title}\"",
+            "\t\t:name=\"${4:item}.${6:id}\">",
+            "\t\t${8:<!-- content -->}",
+            "\t</el-collapse-item>",
+            "</el-collapse>",
+            "${9}"
+        ],
+        "description": "魔筷代码提示折叠面板"
+    },
+    "Others: Collapse Item": {
+        "prefix": "collapseitem",
+        "body": [
+            "<el-collapse-item :title=\"$1\" :name=\"$2\">",
+            "\t${3:<!-- content -->}",
+            "</el-collapse-item>",
+            "${4}"
+        ],
+        "description": "魔筷代码提示折叠面板子组件"
+    },
+    "Others: Dialog": {
+        "prefix": "dialog",
+        "body": [
+            "<el-dialog",
+                "\ttitle=\"提示\"",
+                "\t:visible.sync=\"dialogVisible\"",
+                "\twidth=\"${3:30%}\"",
+                "\t:close-on-click-modal=\"false\">",
+                "\t<span>这是一段信息</span>",
+                "\t<span slot=\"footer\">",
+                    "\t\t<el-button @click=\"dialogVisible = false\">取消</el-button>",
+                    "\t\t<el-button type=\"primary\" @click=\"dialogVisible = false\">确定</el-button>",
+                "\t</span>",
+            "</el-dialog>",
+            "${7}"
+        ],
+        "description": "Element UI <el-dialog>"
+    },
+    "Navigation: Breadcrumb": {
+        "prefix": "breadcrumb",
+        "body": [
+            "<el-breadcrumb separator-class=\"${1:el-icon-arrow-right}\">",
+            "\t<el-breadcrumb-item :to=\"{ path: '$2', name: '$3' }\">$4</el-breadcrumb-item>",
+            "\t<el-breadcrumb-item :to=\"{ path: '$5', name: '$6' }\">$7</el-breadcrumb-item>",
+            "</el-breadcrumb>",
+            "${8}"
+        ],
+        "description": "魔筷代码提示面包屑"
+    },
+    "Navigation: Breadcrumb Item": {
+        "prefix": "elbri",
+        "body": [
+            "<el-breadcrumb-item :to=\"{ path: '$1', name: '$2' }\">$3</el-breadcrumb-item>",
+            "${4}"
+        ],
+        "description": "魔筷代码提示面包屑子组件"
+    },
+    "Navigation: Dropdown": {
+        "prefix": "dropdown",
+        "body": [
+            "<el-dropdown trigger=\"${1:click}\" @command=\"$2\">",
+            "\t<span>",
+            "\t\t<i class=\"el-icon-arrow-down el-icon--right\"></i>",
+            "\t</span>",
+            "\t<el-dropdown-menu slot=\"dropdown\">",
+            "\t\t<el-dropdown-item v-for=\"${3:item} in ${4:items}\"",
+            "\t\t\t:key=\"${3:item}.${5:key}\" :command=\"${3:item}.${6:command}\">",
+            "\t\t\t{{${3:item}.${7:title}}}",
+            "\t\t</el-dropdown-item>",
+            "\t</el-dropdown-menu>",
+            "</el-dropdown>",
+            "${8}"
+        ],
+        "description": "魔筷代码提示下拉菜单"
+    },
+    "Navigation: Dropdown Item": {
+        "prefix": "dropdownitem",
+        "body": [
+            "<el-dropdown-item :command=\"$1\">$2</el-dropdown-item>",
+            "${3}"
+        ],
+        "description": "魔筷代码提示下拉菜单子组件"
+    },
+    "Navigation: Steps": {
+        "prefix": "steps",
+        "body": [
+            "<el-steps :active=\"$1\">",
+            "\t<el-step v-for=\"${2:item} in ${3:items}\"",
+            "\t\t:key=\"${2:item}.${4:key}\"",
+            "\t\t:title=\"${2:item}.${5:title}\"",
+            "\t\t:description=\"${2:item}.${6:description}\"",
+            "\t\t:icon=\"${2:item}.${7:icon}\">",
+            "\t</el-step>",
+            "</el-steps>",
+            "${8}"
+        ],
+        "description": "魔筷代码提示步骤条"
+    },
+    "Navigation: Steps Step": {
+        "prefix": "Step",
+        "body": [
+            "<el-step :title=\"$1\" :description=\"$2\" :icon=\"$3\"></el-step>",
+            "${4}"
+        ],
+        "description": "魔筷代码提示步骤条子组件"
+    },
+}
