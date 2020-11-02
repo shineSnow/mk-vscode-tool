@@ -279,7 +279,7 @@ Support snippets list:
   ```
 * `dialog`
 
-```
+  ```
   <el-dialog
     title="提示"
     :visible.sync="dialogVisible"
@@ -291,7 +291,7 @@ Support snippets list:
       <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
     </span>
   </el-dialog>
-```
+  ```
 
 ## 写在最后
 
