@@ -18,7 +18,7 @@ vscode 插件目前支持的功能是后台项目开发，常用代码片段的�
 |序号| 前缀                  |                        代码                         |
 |:----:| :--------------------- | :-------------------------------------------------|
 |1.| `mk-formTable`    |                    `formTable 组件代码 `             |
-|2.| `mk-dialog`             |               `elementUI 弹框代码片段 `               |
+|2.| `mk-dialog`             |               `弹框组件代码片段 `               |
 |3.| `mk-dialogForm  `       |               `elementUI 表单弹框组件 `               |
 |4.| `mk-get`          |                    `get 请求代码 `                         |
 |5.| `mk-post `              |                    `post 请求代码 `                   |
@@ -102,7 +102,7 @@ vscode 插件目前支持的功能是后台项目开发，常用代码片段的�
 #### Others Part
 |序号|  前缀 | Element Tag|
 |:------:|:--------------|:--------|
-|1. | `mk-dialog` | `<el-dialog>` |
+|1. | `dialog` | `<el-dialog>` |
 |2. | `tooltip` | `<el-tooltip>` |
 |3. | `popover` | `<el-popover>` |
 |4. | `card` | `<el-card>` |
@@ -277,6 +277,21 @@ Support snippets list:
     message: ''
   });
   ```
+* `dialog`
+
+```
+<el-dialog
+  title="提示"
+  :visible.sync="dialogVisible"
+  width="30%"
+  :before-close="handleClose">
+  <span>这是一段信息</span>
+  <span slot="footer" class="dialog-footer">
+    <el-button @click="dialogVisible = false">取 消</el-button>
+    <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+  </span>
+</el-dialog>
+```
 
 ## 写在最后
 
