@@ -44,7 +44,7 @@
             "<style lang='scss' scoped>",
             "</style>"
         ],
-        "description": "魔筷弹框组件"
+        "description": "mk弹框组件"
     },
     "dialogForm": {
         "prefix": "mk-dialogForm",
@@ -187,6 +187,6 @@
             "<style lang='scss' scoped>",
             "</style>"
         ],
-        "description": "魔筷表单弹框组件"
+        "description": "mk表单弹框组件"
     }
 }

@@ -7,7 +7,7 @@
             "</el-row>",
             "${5}"
         ],
-        "description": "魔筷代码提示Element UI <el-row> with <el-col>"
+        "description": "mk代码提示Element UI <el-row> with <el-col>"
     },
     "Basic: el-button": {
         "prefix": "button",
@@ -15,7 +15,7 @@
             "<el-button type=\"${1|primary,text,info,success,warning,danger|}\" @click=\"$2\"></el-button>",
             "${3}"
         ],
-        "description": "魔筷代码提示Element UI <el-button>"
+        "description": "mk代码提示Element UI <el-button>"
     },
     "Form: Radio": {
         "prefix": "radio",
@@ -23,7 +23,7 @@
             "<el-radio v-model=\"${1}\" label=\"${2}\">$3</el-radio>",
             "${4}"
         ],
-        "description": "魔筷代码提示单选框"
+        "description": "mk代码提示单选框"
     },
     "Form: Radio Group": {
         "prefix": "radio-group",
@@ -35,7 +35,7 @@
             "</el-radio-group>",
             "${7}"
         ],
-        "description": "魔筷代码提示单选框组"
+        "description": "mk代码提示单选框组"
     },
     "Form: Checkbox": {
         "prefix": "checkbox",
@@ -43,7 +43,7 @@
             "<el-checkbox v-model=\"${1}\" label=\"${2}\">$3</el-checkbox>",
             "${4}"
         ],
-        "description": "魔筷代码提示多选框"
+        "description": "mk代码提示多选框"
     },
     "Form: Checkbox Group": {
         "prefix": "checkbox-group",
@@ -53,7 +53,7 @@
             "</el-checkbox-group>",
             "${6}"
         ],
-        "description": "魔筷代码提示多选框组"
+        "description": "mk代码提示多选框组"
     },
     "Form: Input": {
         "prefix": "input",
@@ -61,7 +61,7 @@
             "<el-input v-model=\"$1\" placeholder=\"$2\"></el-input>",
             "${3}"
         ],
-        "description": "魔筷代码提示输入框"
+        "description": "mk代码提示输入框"
     },
     "Form: Textarea": {
         "prefix": "textarea",
@@ -69,7 +69,7 @@
             "<el-input type=\"textarea\" :autosize=\"{ minRows: 4, maxRows: 6}\" v-model=\"$2\" placeholder=\"$3\"></el-input>",
             "${4}"
         ],
-        "description": "魔筷代码提示文本域>"
+        "description": "mk代码提示文本域>"
     },
     "Form: Select": {
         "prefix": "select",
@@ -83,7 +83,7 @@
             "</el-select>",
             "${7}"
         ],
-        "description": "魔筷代码提示选择器"
+        "description": "mk代码提示选择器"
     },
     "Form: Select Option": {
         "prefix": "option",
@@ -91,7 +91,7 @@
             "<el-option :label=\"$1\" :value=\"$2\"></el-option>",
             "${3}"
         ],
-        "description": "魔筷代码提示选择器option"
+        "description": "mk代码提示选择器option"
     },
     "Form: Cascader": {
         "prefix": "cascader",
@@ -100,7 +100,7 @@
             "</el-cascader>",
             "${4}"
         ],
-        "description": "魔筷代码提示级联选择器"
+        "description": "mk代码提示级联选择器"
     },
     "Form: Switch": {
         "prefix": "switch",
@@ -114,7 +114,7 @@
             "</el-switch>",
             "${6}"
         ],
-        "description": "魔筷代码提示switch开关"
+        "description": "mk代码提示switch开关"
     },
     "Form: TimePicker": {
         "prefix": "timepicker",
@@ -123,7 +123,7 @@
             "\tplaceholder=\"${4:任意时间点}\">",
             "</el-time-picker>"
         ],
-        "description": "魔筷代码提示时间选择器"
+        "description": "mk代码提示时间选择器"
     },
     "Form: TimePickerRnage": {
         "prefix": "timepickerrange",
@@ -137,7 +137,7 @@
             "\tplaceholder=\"选择时间范围\">",
             "</el-time-picker>"
         ],
-        "description": "魔筷代码提示时间范围选择器"
+        "description": "mk代码提示时间范围选择器"
     },
     "Form: DatePicker": {
         "prefix": "datepicker",
@@ -145,7 +145,7 @@
             "<el-date-picker v-model=\"$1\" type=\"date\" placeholder=\"${2:选择日期时间}\">",
             "</el-date-picker>"
         ],
-        "description": "魔筷代码提示日期选择器"
+        "description": "mk代码提示日期选择器"
     },
     "Form: DatePickerRange": {
         "prefix": "datepickerrange",
@@ -158,7 +158,7 @@
             "\tend-placeholder=\"结束日期\">",
             "</el-date-picker>"
         ],
-        "description": "魔筷代码提示日期范围选择器"
+        "description": "mk代码提示日期范围选择器"
     },
     "Form: DateTimerPicker": {
         "prefix": "datetimepicker",
@@ -169,7 +169,7 @@
             "\tplaceholder=\"选择日期时间\">",
             "</el-date-picker>"
         ],
-        "description": "魔筷代码提示日期时间选择器"
+        "description": "mk代码提示日期时间选择器"
     },
     "Form: DateTimePickerRange": {
         "prefix": "datetimepickerrange",
@@ -182,7 +182,7 @@
             "\tend-placeholder=\"结束日期\">",
             "</el-date-picker>"
         ],
-        "description": "魔筷代码提示日期时间范围选择器"
+        "description": "mk代码提示日期时间范围选择器"
     },
     "Form: Upload": {
         "prefix": "upload",
@@ -199,7 +199,7 @@
             "</el-upload>",
             "${8}"
         ],
-        "description": "魔筷代码提示上传"
+        "description": "mk代码提示上传"
     },
     "Form: Rate": {
         "prefix": "rate",
@@ -207,7 +207,7 @@
             "<el-rate v-model=\"$1\"></el-rate>",
             "${2}"
         ],
-        "description": "魔筷代码提示rate"
+        "description": "mk代码提示rate"
     },
     "Form: ColorPicker": {
         "prefix": "colorpicker",
@@ -215,7 +215,7 @@
             "<el-color-picker v-model=\"$1\"></el-color-picker>",
             "${2}"
         ],
-        "description": "魔筷代码提示颜色选择器"
+        "description": "mk代码提示颜色选择器"
     },
     "Form: Transfer": {
         "prefix": "transfer",
@@ -223,7 +223,7 @@
             "<el-transfer v-model=\"$1\" :data=\"$2\"></el-transfer>",
             "${3}"
         ],
-        "description": "魔筷代码提示穿梭框"
+        "description": "mk代码提示穿梭框"
     },
     "Form: Form": {
         "prefix": "form",
@@ -239,7 +239,7 @@
             "</el-form>",
             "${6}"
         ],
-        "description": "魔筷代码提示form"
+        "description": "mk代码提示form"
     },
     "Form: Form Item": {
         "prefix": "formitem",
@@ -249,7 +249,7 @@
             "</el-form-item>",
             "${3}"
         ],
-        "description": "魔筷代码提示form-item"
+        "description": "mk代码提示form-item"
     },
     "Data: Table": {
         "prefix": "table",
@@ -264,7 +264,7 @@
             "</el-table>",
             "${7}"
         ],
-        "description": "魔筷代码提示表格"
+        "description": "mk代码提示表格"
     },
     "Data: Table Column": {
         "prefix": "tablecolumn",
@@ -276,7 +276,7 @@
             "</el-table-column>",
             "${5}"
         ],
-        "description": "魔筷代码提示表格列元素"
+        "description": "mk代码提示表格列元素"
     },
     "Data: Pagination": {
         "prefix": "pagination",
@@ -292,7 +292,7 @@
             "</el-pagination>",
             "${7}"
         ],
-        "description": "魔筷代码提示分页"
+        "description": "mk代码提示分页"
     },
     "Data: Badge": {
         "prefix": "badge",
@@ -302,7 +302,7 @@
             "</el-badge>",
             "${3}"
         ],
-        "description": "魔筷代码提示badge"
+        "description": "mk代码提示badge"
     },
     "Notice: Alert": {
         "prefix": "alert",
@@ -310,7 +310,7 @@
             "<el-alert :title=\"$1\" type=\"${2|info,success,warning,error|}\" show-icon></el-alert>",
             "${3}"
         ],
-        "description": "魔筷代码提示alert"
+        "description": "mk代码提示alert"
     },
     "Navigation: NavMenu Menu": {
         "prefix": "menu",
@@ -328,7 +328,7 @@
             "</el-menu>",
             "${10}"
         ],
-        "description": "魔筷代码提示menu"
+        "description": "mk代码提示menu"
     },
     "Navigation: NavMenu subMenu": {
         "prefix": "submenu",
@@ -343,7 +343,7 @@
             "</el-submenu>",
             "${8}"
         ],
-        "description": "魔筷代码提示submenu"
+        "description": "mk代码提示submenu"
     },
     "Navigation: NavMenu Menu Item": {
         "prefix": "menuitem",
@@ -351,7 +351,7 @@
             "<el-menu-item :index=\"$1\">$2</el-menu-item>",
             "${3}"
         ],
-        "description": "魔筷代码提示menuitem"
+        "description": "mk代码提示menuitem"
     },
     "Navigation: Tabs": {
         "prefix": "tabs",
@@ -367,7 +367,7 @@
             "</el-tabs>",
             "${8}"
         ],
-        "description": "魔筷代码提示tabs"
+        "description": "mk代码提示tabs"
     },
     "Navigation: Tabs tab pane": {
         "prefix": "tabpane",
@@ -377,7 +377,7 @@
             "</el-tab-pane>",
             "${4}"
         ],
-        "description": "魔筷代码提示tab-pane"
+        "description": "mk代码提示tab-pane"
     },
     "Navigation: Tooltip": {
         "prefix": "tooltip",
@@ -386,7 +386,7 @@
             "<el-button>上边</el-button>",
             "</el-tooltip>"
         ],
-        "description": "魔筷代码提示tab-pane"
+        "description": "mk代码提示tab-pane"
     },
     "Others: Popover": {
         "prefix": "popover",
@@ -402,7 +402,7 @@
             "</el-popover>",
             "${8}"
         ],
-        "description": "魔筷代码提示弹出框"
+        "description": "mk代码提示弹出框"
     },
     "Others: Card": {
         "prefix": "card",
@@ -415,7 +415,7 @@
             "</el-card>",
             "${4}"
         ],
-        "description": "魔筷代码提示卡片"
+        "description": "mk代码提示卡片"
     },
     "Others: Carousel": {
         "prefix": "carousel",
@@ -427,7 +427,7 @@
             "</el-carousel>",
             "${7}"
         ],
-        "description": "魔筷代码提示走马灯"
+        "description": "mk代码提示走马灯"
     },
     "Others: Carousel Item": {
         "prefix": "carouselitem",
@@ -437,7 +437,7 @@
             "</el-carousel-item>",
             "${2}"
         ],
-        "description": "魔筷代码提示走马灯子组件"
+        "description": "mk代码提示走马灯子组件"
     },
     "Others: Collapse": {
         "prefix": "collapse",
@@ -452,7 +452,7 @@
             "</el-collapse>",
             "${9}"
         ],
-        "description": "魔筷代码提示折叠面板"
+        "description": "mk代码提示折叠面板"
     },
     "Others: Collapse Item": {
         "prefix": "collapseitem",
@@ -462,7 +462,7 @@
             "</el-collapse-item>",
             "${4}"
         ],
-        "description": "魔筷代码提示折叠面板子组件"
+        "description": "mk代码提示折叠面板子组件"
     },
     "Others: Dialog": {
         "prefix": "dialog",
@@ -491,7 +491,7 @@
             "</el-breadcrumb>",
             "${8}"
         ],
-        "description": "魔筷代码提示面包屑"
+        "description": "mk代码提示面包屑"
     },
     "Navigation: Breadcrumb Item": {
         "prefix": "elbri",
@@ -499,7 +499,7 @@
             "<el-breadcrumb-item :to=\"{ path: '$1', name: '$2' }\">$3</el-breadcrumb-item>",
             "${4}"
         ],
-        "description": "魔筷代码提示面包屑子组件"
+        "description": "mk代码提示面包屑子组件"
     },
     "Navigation: Dropdown": {
         "prefix": "dropdown",
@@ -517,7 +517,7 @@
             "</el-dropdown>",
             "${8}"
         ],
-        "description": "魔筷代码提示下拉菜单"
+        "description": "mk代码提示下拉菜单"
     },
     "Navigation: Dropdown Item": {
         "prefix": "dropdownitem",
@@ -525,7 +525,7 @@
             "<el-dropdown-item :command=\"$1\">$2</el-dropdown-item>",
             "${3}"
         ],
-        "description": "魔筷代码提示下拉菜单子组件"
+        "description": "mk代码提示下拉菜单子组件"
     },
     "Navigation: Steps": {
         "prefix": "steps",
@@ -540,7 +540,7 @@
             "</el-steps>",
             "${8}"
         ],
-        "description": "魔筷代码提示步骤条"
+        "description": "mk代码提示步骤条"
     },
     "Navigation: Steps Step": {
         "prefix": "Step",
@@ -548,6 +548,6 @@
             "<el-step :title=\"$1\" :description=\"$2\" :icon=\"$3\"></el-step>",
             "${4}"
         ],
-        "description": "魔筷代码提示步骤条子组件"
+        "description": "mk代码提示步骤条子组件"
     },
 }

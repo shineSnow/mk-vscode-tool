@@ -110,7 +110,7 @@
             "<style lang='scss' scoped>"
             "</style>"
         ],
-        "description":"魔筷筛选表格组件"
+        "description":"mk筛选表格组件"
     },
     "dialog":{
         "prefix":"mk-dialog",
@@ -164,7 +164,7 @@
 
             "</style>"
         ],
-        "description":"魔筷弹框组件"
+        "description":"mk弹框组件"
     },
     "dialogForm":{
         "prefix":"mk-dialogForm",
@@ -314,7 +314,7 @@
 
             "</style>"
         ],
-        "description":"魔筷表单弹框组件"
+        "description":"mk表单弹框组件"
     },
     "get": {
         "prefix": "mk-get",
@@ -333,7 +333,7 @@
             "    }"
             "})"
         ],
-        "description": "魔筷GET请求"
+        "description": "mkGET请求"
     },
     "post": {
         "prefix": "mk-post",
@@ -352,35 +352,35 @@
             "    }"
             "})"
         ],
-        "description": "魔筷POST请求"
+        "description": "mkPOST请求"
     },
     "message": {
         "prefix":"mk-message",
         "body": [
             "this.\\$message('这是一条消息提示');"
         ],
-        "description":"魔筷消息提示"
+        "description":"mk消息提示"
     },
     "message-error": {
         "prefix":"mk-message-error",
         "body": [
             "this.\\$message.error('这是一条错误消息提示');"
         ],
-        "description":"魔筷错误消息提示"
+        "description":"mk错误消息提示"
     },
     "message-warning": {
         "prefix":"mk-message-warning",
         "body": [
             "this.\\$message.warning('这是一条警告消息提示');"
         ],
-        "description":"魔筷错误消息提示"
+        "description":"mk错误消息提示"
     },
     "message-success": {
         "prefix":"mk-message-success",
         "body": [
             "this.\\$message.success('这是一条成功消息提示');"
         ],
-        "description":"魔筷成功消息提示"
+        "description":"mk成功消息提示"
     },
     "messageBox-alert": {
         "prefix":"mk-messageBox-alert",
@@ -395,7 +395,7 @@
             "    }"
             "});"
         ],
-        "description":"魔筷消息提示当用户进行操作时会被触发，该对话框中断用户操作，直到用户确认知晓后才可关闭"
+        "description":"mk消息提示当用户进行操作时会被触发，该对话框中断用户操作，直到用户确认知晓后才可关闭"
     },
     "messageBox-confirm": {
         "prefix":"mk-messageBox-confirm",
@@ -416,6 +416,6 @@
             "    }); "         
             "});"
         ],
-        "description":"魔筷消息提示提示用户确认其已经触发的动作，并询问是否进行此操作时会用到此对话框"
+        "description":"mk消息提示提示用户确认其已经触发的动作，并询问是否进行此操作时会用到此对话框"
     }
 }

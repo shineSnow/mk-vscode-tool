@@ -54,7 +54,7 @@ module.exports = function (context) {
     context.subscriptions.push(vscode.commands.registerCommand('extension.demo.showWelcome', function () {
         const panel = vscode.window.createWebviewPanel(
             'testWelcome', // viewType
-            "魔筷前端公告板", // 视图标题
+            "mk前端公告板", // 视图标题
             vscode.ViewColumn.One, // 显示在编辑器的哪个部位
             {
                 enableScripts: true, // 启用JS，默认禁用
