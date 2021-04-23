@@ -1,4 +1,4 @@
-# 魔筷大前端 vscode 插件:mk-vscode-tool
+# 大前端 vscode 插件:mk-vscode-tool
 
 
 
