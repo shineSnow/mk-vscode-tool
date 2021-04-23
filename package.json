@@ -2,8 +2,9 @@
 	"name": "mk-vscode-tool",
 	"displayName": "mk-vscode-tool",
 	"description": "mk大前端vscode工具扩展",
-	"version": "0.1.1",
-	"publisher": "mockuai",
+	"repository": "https://github.com/shineSnow/mk-vscode-tool.git",
+	"version": "0.0.1",
+	"publisher": "zqy",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
